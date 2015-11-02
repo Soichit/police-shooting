@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Police ShootingsXXXXXXXXXXXX</title>
+
+    <!-- jQuery, Bootstrap -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <!-- leaflet libraries -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <!-- Custom files -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+   
+
+
+  </head>
+  <body>
+      <div class ="container">
+          <h1>Police ShootingsXXXXXXXX</h1>
+          <p>This map shows the statistics of police shooting across the USA. The killed ones are shown in a bigger red cirle while survivors are marked in blue. The layers function allows you to sort the markers based on gender. 
+          <a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202">Link to original data source</a>
+          <table class="table table-striped" id="myTable">
+              <tr>
+                <th></th>
+                <th>Men</th>    
+                <th>Women/unspecified</th>
+              </tr>
+          </table>
+      </div>
+
+
+
+
+      <div class="container">
+          <div id="container"></div>
+      </div>
+      <script>
+          drawMap();
+       </script>
+    </body>
+</html>
